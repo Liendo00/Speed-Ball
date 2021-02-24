@@ -41,3 +41,15 @@ body{
 
 
 }
+@media (max-width : 550px){
+    #player{
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        position: absolute;
+        transition: all 0.3s ;
+        background-color: #900;
+        border: 4px dashed #b22;
+    }
+
+}
