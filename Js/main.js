@@ -1,7 +1,7 @@
 document.getElementById('player').addEventListener("click",sumarPuntos);
 
 puntos = 0; 
-tiempo = 60;
+tiempo = 40;
 necesarios = 30;
 
 function sumarPuntos(){
@@ -14,7 +14,7 @@ function sumarPuntos(){
     if (puntos == 30) {
         alert("Ganaste");
         puntos = 0;
-        tiempo = 60;
+        tiempo = 40;
 
     }
 }
@@ -26,7 +26,7 @@ function restarTiempo () {
     document.getElementById("tiempo").innerHTML = "&nbsp;&nbsp;&nbsp;Tiempo: "+ tiempo;
     if(tiempo == 0) {
         alert ("Perdiste maestro");
-        tiempo = 60;
+        tiempo = 40;
         puntos = 0;
     }
 }
