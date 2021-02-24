@@ -1,7 +1,7 @@
-document.getElementById('player').addEventListener("mouseover",sumarPuntos);
+document.getElementById('player').addEventListener("click",sumarPuntos);
 
 puntos = 0; 
-tiempo = 30;
+tiempo = 60;
 necesarios = 30;
 
 function sumarPuntos(){
@@ -13,8 +13,8 @@ function sumarPuntos(){
     document.getElementById("player").style.marginLeft = randNum2 + "px";
     if (puntos == 30) {
         alert("Ganaste");
-        puntos = 0
-        tiempo = 30
+        puntos = 0;
+        tiempo = 60;
 
     }
 }
@@ -26,7 +26,7 @@ function restarTiempo () {
     document.getElementById("tiempo").innerHTML = "&nbsp;&nbsp;&nbsp;Tiempo: "+ tiempo;
     if(tiempo == 0) {
         alert ("Perdiste maestro");
-        tiempo = 0;
+        tiempo = 60;
         puntos = 0;
     }
 }
